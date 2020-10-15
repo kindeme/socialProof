@@ -4,10 +4,10 @@ $primary-magenta: hsl(300, 43%, 22%);
 $primary-pink: hsl(333, 80%, 67%);
 $dark-grayish: hsl(303, 10%, 53%);
 $light-grayish: hsl(300, 24%, 96%);
-$white: (0, 0%, 100%);
+$white: hsl(0, 0%, 100%);
 $ff-family: "Spartan", sans-serif;
 $color: rgb(202, 149, 52);
-$radius: 5px;
+$radius: 6px;
 
 *,
 ::after,
@@ -67,19 +67,37 @@ body {
 }
 .testimonial {
 	background: url(../images/bg-pattern-bottom-mobile.svg) center/cover no-repeat;
+	padding-top: 3rem;
 	&__card {
 		background: $primary-magenta;
-		margin-bottom: 2rem;
-		padding: 1.5rem 1rem;
+		margin-bottom: 1.8rem;
+		padding: 2rem 2rem;
 		border-radius: $radius;
 		&__header {
 			display: flex;
-			margin: 1.2rem;
+			margin-bottom: 1.4rem;
+			align-items: center;
 			&__img {
 				border-radius: 50%;
-				height: 2.5rem;
-				width: 2.5rem;
+				height: 3rem;
+				width: 3rem;
 			}
+			&__title {
+				padding-left: 2.2rem;
+				line-height: 1.5rem;
+				&__name {
+					color: $white;
+				}
+				&__role {
+					color: lighten($color: $primary-magenta, $amount: 20%);
+					font-size: 0.8rem;
+				}
+			}
+		}
+		&__content {
+			line-height: 1.5rem;
+			color: $white;
+			font-weight: 400;
 		}
 	}
 }
