@@ -6,6 +6,7 @@ $dark-grayish: hsl(303, 10%, 53%);
 $light-grayish: hsl(300, 24%, 96%);
 $white: (0, 0%, 100%);
 $ff-family: "Spartan", sans-serif;
+$color: rgb(202, 149, 52);
 
 *,
 ::after,
@@ -18,6 +19,8 @@ body {
 	font-size: 15px;
 	font-family: $ff-family;
 	font-weight: 400;
+	margin-right: 2rem;
+	margin-left: 2rem;
 }
 
 .header {
@@ -39,12 +42,22 @@ body {
 	&__rating {
 		margin-left: auto;
 		margin-right: auto;
+
 		&__info {
 			background: $light-grayish;
 			border-radius: 5px;
 			margin-bottom: 1rem;
-      padding: 1rem;
-      &__
+			padding: 1rem;
+			text-align: center;
+			&__stars {
+				color: $color;
+				padding-bottom: 0.7rem;
+				letter-spacing: 0.4rem;
+			}
+			&__text {
+				color: $primary-magenta;
+				font-weight: 700;
+			}
 		}
 	}
 }
