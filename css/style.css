@@ -27,6 +27,23 @@ body {
   margin-top: 3rem;
 }
 
+.header__info__text {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.header__rating {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__rating__info {
+  background: #f7f2f7;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
 .testimonial {
   background: url(../images/bg-pattern-bottom-mobile.svg) center/cover no-repeat;
 }
