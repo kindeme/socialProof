@@ -7,7 +7,7 @@ $light-grayish: hsl(300, 24%, 96%);
 $white: hsl(0, 0%, 100%);
 $ff-family: "Spartan", sans-serif;
 $color: rgb(202, 149, 52);
-$radius: 6px;
+$radius: 7px;
 @mixin margin {
 	margin-right: 2rem;
 	margin-left: 2rem;
@@ -50,10 +50,7 @@ body {
 		}
 	}
 	&__rating {
-		margin-left: auto;
-		margin-right: auto;
 		margin-top: 2rem;
-
 		&__info {
 			background: $light-grayish;
 			border-radius: $radius;
@@ -112,8 +109,17 @@ body {
 @media screen and (min-width: 380px) {
 	.header {
 		background: url(../images/bg-pattern-top-desktop.svg) center/cover no-repeat;
-		// display: flex;
-		// justify-content: space-between;
+		display: flex;
+		justify-content: space-between;
+		&__info {
+			&__title {
+				text-align: left;
+			}
+			&__text {
+				max-width: 500px;
+				text-align: left;
+			}
+		}
 	}
 	.testimonial {
 		background: url(../images/bg-pattern-bottom-desktop.svg) center/cover
@@ -125,7 +131,23 @@ body {
 			transform: translateY(3rem);
 		}
 		&__card:nth-child(3) {
-			transform: translateY(5rem);
+			transform: translateY(6rem);
+		}
+	}
+}
+@media screen and (min-width: 900px) {
+	.header {
+		&__rating {
+			&__info {
+				display: flex;
+				justify-content: space-between;
+			}
+			&__info:nth-child(1) {
+				transform: translateX(-10rem);
+			}
+			&__info:nth-child(2) {
+				transform: translateX(-6rem);
+			}
 		}
 	}
 }
