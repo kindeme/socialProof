@@ -8,7 +8,10 @@ $white: hsl(0, 0%, 100%);
 $ff-family: "Spartan", sans-serif;
 $color: rgb(202, 149, 52);
 $radius: 6px;
-
+@mixin margin {
+	margin-right: 2rem;
+	margin-left: 2rem;
+}
 *,
 ::after,
 ::before {
@@ -16,16 +19,16 @@ $radius: 6px;
 	margin: 0;
 	box-sizing: border-box;
 }
+
 body {
 	font-size: 15px;
 	font-family: $ff-family;
 	font-weight: 400;
-	margin-right: 2rem;
-	margin-left: 2rem;
 }
 
 .header {
 	background: url(../images/bg-pattern-top-mobile.svg) center/cover no-repeat;
+	@include margin;
 	&__info {
 		&__title {
 			font-family: $ff-family;
@@ -68,6 +71,7 @@ body {
 .testimonial {
 	background: url(../images/bg-pattern-bottom-mobile.svg) center/cover no-repeat;
 	padding-top: 3rem;
+	@include margin;
 	&__card {
 		background: $primary-magenta;
 		margin-bottom: 1.8rem;
@@ -101,16 +105,22 @@ body {
 		}
 	}
 }
-@media screen and (min-width: 380px) and (max-width:1440px){
+@media screen and (min-width: 380px) {
+	.body {
+		max-width: 1440px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.header {
 		background: url(../images/bg-pattern-top-desktop.svg) center/cover no-repeat;
-		display: flex;
-		justify-content: space-between;
+		// display: flex;
+		// justify-content: space-between;
 	}
 	.testimonial {
-		background: url(../images/bg-pattern-bottom-desktop.svg) center/cover	no-repeat;
+		background: url(../images/bg-pattern-bottom-desktop.svg) center/cover
+			no-repeat;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 		grid-gap: 1rem;
 	}
 }

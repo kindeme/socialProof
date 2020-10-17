@@ -12,12 +12,12 @@ body {
   font-size: 15px;
   font-family: "Spartan", sans-serif;
   font-weight: 400;
-  margin-right: 2rem;
-  margin-left: 2rem;
 }
 
 .header {
   background: url(../images/bg-pattern-top-mobile.svg) center/cover no-repeat;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .header__info__title {
@@ -64,6 +64,8 @@ body {
 .testimonial {
   background: url(../images/bg-pattern-bottom-mobile.svg) center/cover no-repeat;
   padding-top: 3rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .testimonial__card {
@@ -109,15 +111,14 @@ body {
   font-weight: 400;
 }
 
-@media screen and (min-width: 380px) and (max-width: 1440px) {
+@media screen and (min-width: 380px) {
+  .body {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .header {
     background: url(../images/bg-pattern-top-desktop.svg) center/cover no-repeat;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   .testimonial {
     background: url(../images/bg-pattern-bottom-desktop.svg) center/cover no-repeat;
