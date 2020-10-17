@@ -14,8 +14,7 @@ body {
   font-weight: 400;
   width: 100%;
   max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 3rem auto;
 }
 
 .header {
@@ -113,7 +112,7 @@ body {
   font-weight: 400;
 }
 
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 600px) {
   .header {
     background: url(../images/bg-pattern-top-desktop.svg) center/cover no-repeat;
     display: -webkit-box;
@@ -156,6 +155,10 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .header__rating__info__stars {
+    color: #ca9534;
+    padding-bottom: 0.7rem;
   }
   .header__rating__info:nth-child(1) {
     -webkit-transform: translateX(-10rem);
