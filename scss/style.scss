@@ -24,6 +24,10 @@ body {
 	font-size: 15px;
 	font-family: $ff-family;
 	font-weight: 400;
+	width: 100%;
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .header {
@@ -106,11 +110,6 @@ body {
 	}
 }
 @media screen and (min-width: 380px) {
-	.body {
-		max-width: 1440px;
-		margin-left: auto;
-		margin-right: auto;
-	}
 	.header {
 		background: url(../images/bg-pattern-top-desktop.svg) center/cover no-repeat;
 		// display: flex;
@@ -120,13 +119,13 @@ body {
 		background: url(../images/bg-pattern-bottom-desktop.svg) center/cover
 			no-repeat;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-		grid-gap: 1rem;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-gap: 1.5rem;
 		&__card:nth-child(2) {
-			transform: translateY(2rem);
+			transform: translateY(3rem);
 		}
 		&__card:nth-child(3) {
-			transform: translateY(4rem);
+			transform: translateY(5rem);
 		}
 	}
 }
