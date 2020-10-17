@@ -122,5 +122,11 @@ body {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 		grid-gap: 1rem;
+		&__card:nth-child(2) {
+			transform: translateY(2rem);
+		}
+		&__card:nth-child(3) {
+			transform: translateY(4rem);
+		}
 	}
 }

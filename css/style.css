@@ -128,4 +128,12 @@ body {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 1rem;
   }
+  .testimonial__card:nth-child(2) {
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
+  }
+  .testimonial__card:nth-child(3) {
+    -webkit-transform: translateY(4rem);
+            transform: translateY(4rem);
+  }
 }
