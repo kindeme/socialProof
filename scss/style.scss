@@ -101,3 +101,16 @@ body {
 		}
 	}
 }
+@media screen and (min-width: 380px) and (max-width:1440px){
+	.header {
+		background: url(../images/bg-pattern-top-desktop.svg) center/cover no-repeat;
+		display: flex;
+		justify-content: space-between;
+	}
+	.testimonial {
+		background: url(../images/bg-pattern-bottom-desktop.svg) center/cover	no-repeat;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+		grid-gap: 1rem;
+	}
+}
