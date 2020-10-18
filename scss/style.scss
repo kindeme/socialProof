@@ -105,6 +105,16 @@ body {
 		}
 	}
 }
+@media screen and (min-width: 400px) {
+	.header {
+		background: url(../images/bg-pattern-top-desktop.svg) center/cover no-repeat;
+	}
+	.testimonial {
+		background: url(../images/bg-pattern-bottom-desktop.svg) center/cover
+			no-repeat;
+	}
+}
+
 @media screen and (min-width: 600px) {
 	.header {
 		background: url(../images/bg-pattern-top-desktop.svg) center/cover no-repeat;
@@ -121,8 +131,6 @@ body {
 		}
 	}
 	.testimonial {
-		background: url(../images/bg-pattern-bottom-desktop.svg) center/cover
-			no-repeat;
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 		grid-gap: 1.5rem;
@@ -140,9 +148,10 @@ body {
 			&__info {
 				display: flex;
 				justify-content: space-between;
+				// padding-right: 2rem;
 				&__stars {
 					color: $color;
-					padding-bottom: 0.7rem;
+					// padding-bottom: 0.7rem;
 				}
 			}
 			&__info:nth-child(1) {

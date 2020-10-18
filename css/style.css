@@ -112,6 +112,15 @@ body {
   font-weight: 400;
 }
 
+@media screen and (min-width: 400px) {
+  .header {
+    background: url(../images/bg-pattern-top-desktop.svg) center/cover no-repeat;
+  }
+  .testimonial {
+    background: url(../images/bg-pattern-bottom-desktop.svg) center/cover no-repeat;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .header {
     background: url(../images/bg-pattern-top-desktop.svg) center/cover no-repeat;
@@ -130,7 +139,6 @@ body {
     text-align: left;
   }
   .testimonial {
-    background: url(../images/bg-pattern-bottom-desktop.svg) center/cover no-repeat;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
@@ -158,7 +166,6 @@ body {
   }
   .header__rating__info__stars {
     color: #ca9534;
-    padding-bottom: 0.7rem;
   }
   .header__rating__info:nth-child(1) {
     -webkit-transform: translateX(-10rem);
